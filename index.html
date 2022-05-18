@@ -11,18 +11,21 @@
   }
 }
     </script> <!--prevent user download img-->
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QERXYFTHKB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QERXYFTHKB');
-</script>
-    
     <link rel="stylesheet" href="css/stylesheet.css">
+
+<!-- navigator bar -->
+    <nav id="headnav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#container">About</a></li>
+            <li><a href="#jobs">Gallery</a></li>
+            <li><a href="#test">Testimonial</a></li>
+            <li><a href="#callus">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,16 +36,30 @@
 <body>
 
 <div>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#container">About</a></li>
+            <li><a href="#jobs">Gallery</a></li>
+            <li><a href="#test">Testimonial</a></li>
+            <li><a href="#callus">Contact</a></li>
+        </ul>
+    </div>
+
 <a name="home"></a>
     <img id="logoimg" src="link/Handymanlogotype.png" alt="logo type" >
-    <div >
+    
+    <div id="content-desktop">
            <center>
             <img class="icon" src="link/icon-01.jpg" alt="silicon" >
             <img class="icon" src="link/icon-08.jpg" alt="window" >
             <img class="icon" src="link/icon-02.jpg" alt="cabinet" >
             <img class="icon" src="link/icon-03.jpg" alt="delivery" >
             <img class="icon" src="link/icon-04.jpg" alt="Disposal" >
-            <img class="icon" src="link/icon-05.png" alt="Dismantle" >           
+            <img class="icon" src="link/icon-05.png" alt="Dismantle" ><br>           
             <img class="icon" src="link/icon-06.jpg" alt="Socket" > 
             <img class="icon" src="link/icon-09.jpg" alt="light" >
             <img class="icon" src="link/icon-14.png" alt="locksmith" >
@@ -51,6 +68,24 @@
             <img class="icon" src="link/icon-11.jpg" alt="watertap" >
         </center>
     </div>
+
+     <div id="content-mobile">
+           <center>
+            <img class="icon" src="link/icon-01.jpg" alt="silicon" >
+            <img class="icon" src="link/icon-08.jpg" alt="window" >
+            <img class="icon" src="link/icon-02.jpg" alt="cabinet" >
+            <img class="icon" src="link/icon-03.jpg" alt="delivery" >
+            <img class="icon" src="link/icon-04.jpg" alt="Disposal" >
+            <img class="icon" src="link/icon-05.png" alt="Dismantle" >         
+            <img class="icon" src="link/icon-06.jpg" alt="Socket" > 
+            <img class="icon" src="link/icon-09.jpg" alt="light" >
+            <img class="icon" src="link/icon-14.png" alt="locksmith" >
+            <img class="icon" src="link/icon-07.jpg" alt="TV" >
+           <img class="icon" src="link/icon-10.jpg" alt="door" >
+            <img class="icon" src="link/icon-11.jpg" alt="watertap" >
+        </center>
+    </div>
+
 <div id="container">
         <p class="back">
     Deft Handyman was founded by Peter Chua, a professional with over 10 years experience in the Carpentry industry. I am a problem solver in maintenance and repairs around your home or office. In sense of refinement, the work I serve you,
@@ -62,8 +97,9 @@ gives you peace of mind.<br><br>
 <span class="b">Dismantle and disposal services.</span> 
     </p>
 </div>
-<a name="jobs"></a>
+
 <h1>Jobs has been done</h1>
+<a name="jobs"></a>
 <figure>
     <img id="changer" src="link/joubciumage-01.jpg" alt="doorlock">
     <figcaption>Replace Smart Door Lock</figcaption>
@@ -106,7 +142,7 @@ laundry dryer</figcaption></figure>
     </figure>
 </div>
 </div>
-<a name="about"></a>
+<a name="test"></a>
 <br><h1>Testimonial</h1>
  <div id="containerrev">
  <div class="d2, row">
@@ -146,6 +182,7 @@ day and fixed it by replacing. Very handy and affordable. Helpful also. Hope no 
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/index.js"></script>
 
   <footer>
     <p class="foot">@2022 Grand Trade Pte ltd, all rights reserved.<br>
