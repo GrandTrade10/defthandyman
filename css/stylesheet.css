@@ -36,6 +36,107 @@ footer{
 }
 
 
+/*hide and show content in different device*/
+#content-desktop {display: block;}
+#content-mobile{display: none;}
+
+
+/* navigator bar */
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #1d1f1d;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: #0AAAAA;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: black;
+}
+
+#hamburger-icon {
+	position: fixed;
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #headnav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+
 /* testimonial*/
 
 
@@ -146,6 +247,11 @@ a:active{color: orange}
 
 
 /********** Large devices only **********/
+@media (min-width: 2000px) and (max-width: 3400px) {
+/*hide and show content in different device*/
+#content-desktop {display: block;}
+#content-mobile{display: none;}
+}
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -171,6 +277,10 @@ width: 30%;}
 	padding-bottom: 40px;
 }
   
+#content-desktop {display: block;}
+#content-mobile{display: none;}
+
+
 }
 
 /********** Small devices only **********/
@@ -182,11 +292,11 @@ width: 30%;}
 }
 
 		#logoimg {display: block; /*to make the image-rendering centerlise*/
-width: 35%;
+width: 40%;
 margin: auto;
 padding: 4%;}
 
-	.icon {width: 11%;}
+	.icon {width: 12%;}
 
 
 
@@ -195,6 +305,8 @@ padding: 4%;}
 margin: auto;
 width: 40%;}
 
+#content-desktop {display: block;}
+#content-mobile{display: none;}
 
 
 }
@@ -220,7 +332,7 @@ body {
 		line-height: 19pt;
 	}
 
-	.icon {width: 15%;
+	.icon {width: 12%;
 		margin: 8px;
 	}
 
@@ -251,8 +363,22 @@ margin: auto;}
 #star{display: block;
 	width: 5em}
 
+#content-desktop {display: none;}
+#content-mobile{display: block;}
+
+  head #headnav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+
+
 
 }
+
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
@@ -272,7 +398,7 @@ width: 50%;
 margin: auto;
 padding: 10%;}
 
-	.icon {width: 22%;
+	.icon {width: 20%;
 		margin: 5px;
 	}
 
@@ -286,6 +412,19 @@ figure{padding-top: 10px;
 .left {display: block;
 margin: auto;
 width: 350px;}
+
+
+/*hide and show content in different device*/
+#content-desktop {display: none;}
+#content-mobile{display: block;}
+
+  #headnav {
+  head  display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
 
 
 }
