@@ -7,6 +7,7 @@ body {font-family: Ubuntu,helvetica, sans-serif;
 		font-size: 14pt;
 		line-height: 19pt;
 		margin: 0;
+		background-color: #E8F6F3;
 	}
 
 .icon {width: 5%;
@@ -160,7 +161,9 @@ margin: auto;}
 #star{display: block;
 	width: 8%;}
 
-section{padding: 10px 40px;
+section{
+	background-color: #FEFEEF;
+	padding: 10px 40px;
 border: 1px solid #c0c0c0;
 border-width: thin;
 margin: 5px;
