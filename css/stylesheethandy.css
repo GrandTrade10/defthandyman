@@ -17,6 +17,12 @@ body{padding: 0;
 margin: 0;
 }
 
+#callout {position: fixed;
+display: block;
+margin: 8px 8px 8px 8px;
+padding-bottom: 1.5em;
+bottom:0;}
+
 /*Slide show of iamge */
 .mySlides {display: none;}
 img {vertical-align: middle;}
